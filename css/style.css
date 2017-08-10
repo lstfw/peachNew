@@ -6,75 +6,10 @@ body, div, a, img, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, input, spa
     list-style: none;
 }
 body{
-    background: rgba(0,0,0,1);
+    background: url("../image/bg2.jpg") no-repeat top center fixed;
 }
 
 
-.nav {
-    background: #3b88d8;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 100000;
-}
-
-.container {
-    width: 998px;
-    margin: 0 auto;
-}
-
-.menu {
-    float: right;
-    text-align: center;
-}
-
-.menu li {
-    float: left;
-}
-
-.menu li:hover {
-    color: #fff;
-}
-
-.menu .menuLi {
-    width: 145px;
-    height: 30px;
-    color: #ffd200;
-    padding: 30px 0;
-}
-
-.menu2 {
-    margin-top: 24px;
-    display: none;
-    padding: 10px 0;
-    background-color: #302e32;
-}
-
-.menu2 li {
-    float: none;
-    width: 145px;
-    height: 30px;
-    line-height: 30px;
-    float: none;
-    color: #fff;
-
-}
-
-.menu2 li {
-    color: #ffd200;
-}
-
-.menu li:hover .menuLi {
-    color: #fff;
-}
-
-.menu2 li:hover {
-    color: red;
-}
-
-.menu li:hover .menu2 {
-    display: block;
-}
 
 .main {
     min-width: 998px;
@@ -93,6 +28,7 @@ body{
 }
 
 .imgC img{
+    opacity: 0.9;
     width: 100%;
 }
 
