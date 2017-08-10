@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>卢双桃个人站</title>
+    <link type="text/css" rel="stylesheet" href="css/carousel.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+
+</head>
+
+<body>
+<!--nav区-->
+<!--<nav class="nav">
+    <div class="container">
+        <ul class="menu">
+            <li class="anchorLi menuLi">
+                <p>个人首页</p>
+                <p>HOME</p>
+            </li>
+            <li class="anchorLi menuLi">
+                <p>个人简历</p>
+                <p>RESUME</p>
+
+            </li>
+            <li class="menuLi">
+                <p>设计作品</p>
+                <p>WORKS</p>
+
+                <ul class="menu2">
+                    <li class="anchorLi">APP展示</li>
+                    <li class="anchorLi">微信公众号展示</li>
+                    <li class="anchorLi">ICON展示</li>
+                    <li class="anchorLi">手机主题展示</li>
+                    <li class="anchorLi">PAD端APP展示</li>
+                    <li class="anchorLi">平面广告展示</li>
+                    <li class="anchorLi">企业站展示</li>
+                    <li class="anchorLi">代码展示</li>
+                </ul>
+
+            </li>
+            <li class="anchorLi menuLi">
+                <p>联系方式</p>
+                <p>CONTACT</p>
+
+            </li>
+        </ul>
+        <img class="logo" src="image/logo_c4.png">
+    </div>
+</nav>-->
+
+
+<div class="main">
+    <!--banner区-->
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img1.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img2.jpg" alt=""/>
+        </div>
+    </div>
+
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img3.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img4.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img5.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img6.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img7.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img8.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img9.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img10.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img11.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img12.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img13.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img14.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img15.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img16.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img17.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img18.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img19.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img20.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img21.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class=" anchor">
+        <div class="imgC">
+            <img src="image/img22.jpg" alt=""/>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+        Carousel.init($(".J_Poster"));
+    });
+
+
+    $('.qyz img').click(function () {
+
+        var activeSrc = $('.active').attr('src'),
+            thisSrc = $(this).attr('src');
+        $(this).attr('src', activeSrc);
+        $('.active').attr('src', thisSrc);
+
+    });
+
+
+    //菜单点击事件
+    $('.anchorLi').click(function () {
+        //声明点击按钮的位置
+        var i = 0;
+        //作用域不同
+        var self = this;
+        //遍历菜单按钮
+        $('.anchorLi').each(function (index) {
+            //当点击的按钮和  按钮中的某一个按钮相等（同一个）的时候停止遍历
+            if ($('.anchorLi')[index] == self) {
+                //赋值选中按钮位置
+                i = index;
+                return;
+            }
+
+        });
+
+        //获取指定版块的上边值
+        var top = $('.anchor').eq(i).offset().top - 90;
+        //动画时间  =  （滚动条垂直距离 -  版块的上边值）取绝对值   / 系数
+        var time = Math.abs($(document).scrollTop() - top) / 5;
+        //设置滚动条垂直距离 动画
+        $('body').animate({scrollTop: top}, time);
+
+    })
+
+
+</script>
+
+
+</body>
+</html>
+
+
